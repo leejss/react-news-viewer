@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import NewsItem from './NewsItem';
 
 const NewsListBlock = styled.div`
-  position: relative;
+  /* position: relative;
   top: 50px;
   box-sizing: border-box;
   padding-bottom: 3rem;
@@ -15,7 +15,7 @@ const NewsListBlock = styled.div`
     width: 100%;
     padding-left: 1rem;
     padding-right: 1rem;
-  }
+  } */
 `;
 
 const NewsList = ({ articles }) => {

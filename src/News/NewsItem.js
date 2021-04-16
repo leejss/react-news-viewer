@@ -2,9 +2,35 @@ import React from 'react';
 import styled from 'styled-components';
 
 const NewsItemBlock = styled.div`
-  display: flex;
+  height: 100vh;
+  text-align: right;
+  /* border-bottom: 1px solid gray; */
 
   .thumbnail {
+    text-align: left;
+    img {
+      display: block;
+      height: 50vh;
+      width: 50vw;
+      object-fit: cover;
+    }
+  }
+
+  /* 032c */
+  .contents {
+    color: #fff;
+    font-size: 2rem;
+
+    a {
+      color: #fff;
+    }
+
+    a:hover {
+      color: #fe0000;
+    }
+  }
+
+  /* .thumbnail {
     margin-right: 1rem;
     img {
       display: block;
@@ -32,7 +58,7 @@ const NewsItemBlock = styled.div`
   }
   & + & {
     margin-top: 3rem;
-  }
+  } */
 `;
 
 const NewsItem = ({ article }) => {
